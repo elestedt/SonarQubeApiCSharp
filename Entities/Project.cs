@@ -8,31 +8,12 @@ namespace SonarQubeApiCSharp.Entities
         [JsonProperty("id")]
         public int Id { get; set; }
 
-        [JsonProperty("key")]
+        [JsonProperty("k")]
         public string Key { get; set; }
 
-        [JsonProperty("name")]
+        [JsonProperty("nm")]
         public string Name { get; set; }
 
-        [JsonProperty("scope")]
-        public string Scope { get; set; }
-
-        [JsonProperty("date")]
-        public DateTime Date { get; set; }
-
-        [JsonProperty("creationDate")]
-        public DateTime CreationDate { get; set; }
-
-        [JsonProperty("lname")]
-        public string LName { get; set; }
-
-        [JsonProperty("lang")]
-        public string Language { get; set; }
-
-        [JsonProperty("version")]
-        public string Version { get; set; }
-
-        [JsonProperty("description")]
-        public string Description { get; set; }
     }
+
 }
