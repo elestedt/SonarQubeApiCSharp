@@ -8,9 +8,9 @@ namespace SonarQubeApiCSharp.Api
 {
     public class Permissions
     {
-        private static string PERMISSIONS_ADDGROUP_ID = "/api/permissions/add_group?projectId={0}&groupId={1}&permission={2}";
+        //private static string PERMISSIONS_ADDGROUP_ID = "/api/permissions/add_group?projectId={0}&groupId={1}&permission={2}";
+        //private static string PERMISSIONS_REMOVEGROUP_KEY = "/api/permissions/remove_group?projectKey={0}&groupId={1}&permission={2}";
         private static string PERMISSIONS_ADDGROUP_KEY = "/api/permissions/add_group?projectKey={0}&groupId={1}&permission={2}";
-        private static string PERMISSIONS_REMOVEGROUP_KEY = "/api/permissions/remove_group?projectKey={0}&groupId={1}&permission={2}";
 
         private ImprovedRestClient _client;
 

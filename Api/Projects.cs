@@ -23,6 +23,8 @@ namespace SonarQubeApiCSharp.Api
         {
             var request = new RestRequest(PROJECTS_LIST, Method.GET);
             List<Project> response = _client.Execute<List<Project>>(request);
+            if (null == response)
+                response = new List<Project>();
             return response;
         }
 
@@ -31,6 +33,8 @@ namespace SonarQubeApiCSharp.Api
             var url = UrlBuilder.FormatRestApiUrl(PROJECTS_LIST_QUERY, key);
             var request = new RestRequest(url, Method.GET);
             List<Project> response = _client.Execute<List<Project>>(request);
+            if (null == response)
+                response = new List<Project>();
             return response;
         }
 
