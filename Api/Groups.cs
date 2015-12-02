@@ -7,9 +7,9 @@ namespace SonarQubeApiCSharp.Api
 {
     public class Groups
     {
-        private static string USERGROUPS_SEARCH = "/api/usergroups/search";
-        private static string USERGROUPS_SEARCH_QUERY = "/api/usergroups/search?q={0}";
-        private static string USERGROUPS_CREATE = "/api/usergroups/create?name={0}";
+        private static string USERGROUPS_SEARCH = "/api/user_groups/search";
+        private static string USERGROUPS_SEARCH_QUERY = "/api/user_groups/search?q={0}";
+        private static string USERGROUPS_CREATE = "/api/user_groups/create?name={0}";
 
         private ImprovedRestClient _client;
 
