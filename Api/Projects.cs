@@ -8,8 +8,8 @@ namespace SonarQubeApiCSharp.Api
 {
     public class Projects
     {
-        private static string PROJECTS_LIST = "/api/projects/list";
-        private static string PROJECTS_LIST_QUERY = "/api/projects/list?key={0}";
+        private static string PROJECTS_LIST = "/api/projects/index";
+        private static string PROJECTS_LIST_QUERY = "/api/projects/index?key={0}";
         private static string PROJECTS_CREATE = "/api/projects/create?key={0}&name={1}";
 
         private ImprovedRestClient _client;
@@ -33,8 +33,6 @@ namespace SonarQubeApiCSharp.Api
             var url = UrlBuilder.FormatRestApiUrl(PROJECTS_LIST_QUERY, key);
             var request = new RestRequest(url, Method.GET);
             List<Project> response = _client.Execute<List<Project>>(request);
-            if (null == response)
-                response = new List<Project>();
             return response;
         }
 

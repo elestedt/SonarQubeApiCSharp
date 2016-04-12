@@ -51,9 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\Users.cs" />
     <Compile Include="Api\Groups.cs" />
     <Compile Include="Api\Permissions.cs" />
     <Compile Include="Api\Projects.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Group.cs" />
     <Compile Include="Entities\Project.cs" />
     <Compile Include="Helpers\ResponseWrapper.cs" />

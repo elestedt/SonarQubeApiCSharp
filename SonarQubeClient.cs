@@ -18,11 +18,14 @@ namespace SonarQubeApiCSharp
         private void InjectDependencies()
         {
             this.Projects = new Projects(_client);
+            this.Users = new Users(_client);
             this.Groups = new Groups(_client);
             this.Permissions = new Permissions(_client);
         }
 
         public Projects Projects { get; private set; }
+
+        public Users Users { get; private set; }
 
         public Groups Groups { get; private set; }
 
